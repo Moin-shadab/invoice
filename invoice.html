@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Invoice</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .invoice-box { width: 800px; margin: auto; padding: 30px; border: 1px solid #eee; box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
+        .header { text-align: center; }
+        .logo { max-width: 200px; }
+        .invoice-header, .invoice-details { width: 100%; margin-bottom: 20px; }
+        .invoice-header table, .invoice-details table { width: 100%; }
+        .invoice-details td { padding: 5px; }
+        .invoice-table { width: 100%; border-collapse: collapse; }
+        .invoice-table th, .invoice-table td { border: 1px solid #ddd; padding: 8px; }
+        .invoice-table th { background-color: #f2f2f2; text-align: left; }
+        .total { font-weight: bold; }
+        .note { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="invoice-box">
+        <div class="header">
+            <img src="logo.png" class="logo">
+            <h1>INVOICE</h1>
+        </div>
+        <div class="invoice-header">
+            <table>
+                <tr>
+                    <td>
+                        <strong>From:</strong><br>
+                        Sorina TEST 123<br>
+                        Long Baharam, 34-38, B Building<br>
+                        Madurai, Tamil Nadu (TN - 33), India<br>
+                        998756334<br>
+                        sorina@sleekbill.in<br>
+                        sleekbill.in<br>
+                        GSTIN: 123456711111111<br>
+                    </td>
+                    <td>
+                        <strong>To:</strong><br>
+                        Ab Company<br>
+                        Hope Street no. 26, Building B<br>
+                        Mumbai, Maharashtra (MH - 27), India<br>
+                        9873421098<br>
+                        Maron Smith<br>
+                        Place of Supply: MH (27)<br>
+                        GSTIN: 09AAMFC0376K1Z4<br>
+                    </td>
+                    <td>
+                        <strong>Invoice No:</strong> X33<br>
+                        <strong>Date:</strong> February 21, 2018<br>
+                        <strong>Due Date:</strong> March 03, 2018<br>
+                        <strong>P.O. Number:</strong> 02<br>
+                        <strong>P.O. Date:</strong> January 24, 2018<br>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="invoice-details">
+            <table>
+                <tr>
+                    <td>
+                        <strong>Waybill No:</strong> 234<br>
+                        <strong>LR No:</strong> B256<br>
+                        <strong>Delivery Note:</strong> 05<br>
+                        <strong>Vehicle No:</strong> B 230 BLR<br>
+                        <strong>Shipping method:</strong> truck<br>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <table class="invoice-table">
+            <tr>
+                <th>NO</th>
+                <th>PRODUCT / SERVICE NAME</th>
+                <th>HSN/SAC</th>
+                <th>PREPARATION</th>
+                <th>UNIT PRICE</th>
+                <th>IGST</th>
+                <th>CESS</th>
+                <th>AMOUNT</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>solvent<br>white cleaner industrial substance ISD 00456</td>
+                <td>345</td>
+                <td>23.00</td>
+                <td>200.00<br>-Discount 5%</td>
+                <td>524.40<br>12.00%</td>
+                <td>218.50<br>5%</td>
+                <td>4,894.40</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>detergent<br>only carpets 100% KER23</td>
+                <td>1296</td>
+                <td>3.00</td>
+                <td>2,000.00</td>
+                <td>1,080.00<br>18.00%</td>
+                <td>0.00<br>0%</td>
+                <td>7,080.00</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>poly cloth<br>2 layer, dust, anti static, blue</td>
+                <td>3455</td>
+                <td>100.00</td>
+                <td>150.00<br>-Discount 10%</td>
+                <td>1,620.00<br>12.00%</td>
+                <td>0.00<br>0%</td>
+                <td>15,120.00</td>
+            </tr>
+            <tr>
+                <td colspan="7" class="total">Shipping & Packaging</td>
+                <td>100.00</td>
+            </tr>
+            <tr>
+                <td colspan="7" class="total">@12%</td>
+                <td>17870.00</td>
+            </tr>
+            <tr>
+                <td colspan="7" class="total">@18%</td>
+                <td>6000.00</td>
+            </tr>
+            <tr>
+                <td colspan="7" class="total">TOTAL</td>
+                <td>23970.00</td>
+            </tr>
+            <tr>
+                <td colspan="7" class="total">TOTAL BEFORE TAX</td>
+                <td>25,700.00</td>
+            </tr>
+            <tr>
+                <td colspan="7" class="total">DISCOUNT</td>
+                <td>-1,730.00</td>
+            </tr>
+            <tr>
+                <td colspan="7" class="total">TOTAL TAX AMOUNT</td>
+                <td>3,454.90</td>
+            </tr>
+            <tr>
+                <td colspan="7" class="total">ROUNDED OFF</td>
+                <td>0.10</td>
+            </tr>
+            <tr>
+                <td colspan="7" class="total">TOTAL AMOUNT</td>
+                <td>27,425</td>
+            </tr>
+            <tr>
+                <td colspan="7" class="total">AMOUNT DUE</td>
+                <td>27,425</td>
+            </tr>
+        </table>
+        <div class="note">
+            <p><strong>NOTE:</strong><br>
+            Please note that all products are fragile and need to be transported with caution.<br>
+            If invoice has not been paid in 5 days after due date, a tax of 10% of total value is applied to each day of delay.</p>
+        </div>
+    </div>
+</body>
+</html>
